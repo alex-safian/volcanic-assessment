@@ -1,0 +1,45 @@
+.input, .select {
+  @apply appearance-none bg-white border border-gray-400 shadow-sm px-3 py-2 leading-6 rounded-md focus:border-gray-600 focus:outline-none;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  @apply focus:placeholder-gray-400 opacity-100 italic;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  @apply focus:placeholder-gray-400 opacity-100 italic;
+}
+
+input::placeholder, textarea::placeholder {
+  @apply focus:placeholder-gray-400 opacity-100 italic;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance:textfield; /* Firefox */
+}
+
+.select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right .5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact
+}
+
+.btn {
+  @apply font-bold py-1 px-3 rounded transition-colors duration-150 focus:outline-none;
+
+  &-primary{
+    @apply bg-primary text-white hover:bg-secondary;
+  }
+
+  &-secondary{
+    @apply bg-gray-300  text-white hover:bg-gray-500;
+  }
+}
