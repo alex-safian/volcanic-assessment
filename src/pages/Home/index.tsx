@@ -1,8 +1,6 @@
 import React from "react";
 import Modal from "../../components/Modal";
 
-import "rsuite/lib/Modal/styles/index.less";
-
 import Container from "../../components/Container";
 
 const Home: React.FC = () => {
